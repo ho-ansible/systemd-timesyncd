@@ -2,9 +2,11 @@
 # Configure template role
 # Replace 'all' with your own inventory group
 ---
-- name: template | template role
+- name: timesyncd | synchronize time
   hosts: all
   roles:
-  - role: template
+  - role: systemd-timesyncd
     tags:
-    - template
+    - ntp
+    - time
+  when: ansible_virtualization_type != 'openvz'
