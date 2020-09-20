@@ -10,6 +10,9 @@ Only tested on Debian stable, for now.
   Any NTP servers assigned by DHCP on any interface managed by
   systemd-networkd will take precedence over these.
 
+## Playbooks
++ `main.yml`: apply role
+
 ## Dependencies
 None.
 
