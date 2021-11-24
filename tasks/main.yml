@@ -1,4 +1,11 @@
 ---
+
+- name: timesync | package
+  tags:
+  - package
+  package:
+    name: systemd-timesyncd
+
 - name: timesync | config
   tags:
   - config
