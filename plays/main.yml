@@ -9,4 +9,4 @@
     tags:
     - ntp
     - time
-  when: ansible_virtualization_type != 'container'
+    when: ansible_virtualization_type != 'container'
